@@ -1,0 +1,26 @@
+ // program untuk menemukan nilai terkecil dari anggota array
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int Jumlah,i,minimum;
+	cout << "Jumlah murid: ";
+	cin >> Jumlah;
+	
+	int Nilai[Jumlah];
+	for (i=0; i<Jumlah; i++){
+		cout << "Nilai dari murid no " <<(i+1) <<": ";
+		cin >> Nilai[i];
+		}
+	
+	minimum = Nilai [0];
+	for (i=0; i<Jumlah; i++)
+		if (Nilai[i]< minimum){
+			minimum= Nilai[i];
+		}
+		cout<< "NIlai minimum dari " <<Jumlah <<" murid adalah: " <<minimum ; 
+		  
+	return 0;
+}
