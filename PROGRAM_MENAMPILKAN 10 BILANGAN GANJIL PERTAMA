@@ -1,0 +1,24 @@
+// program untuk mencetak deret 10 bilangan ganjil pertama dengan memanfaatkan array satu dimensi
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int angka[20], n=1, ganjil, i;
+	
+	cout << "10 bilangan ganjil pertama adalah: " ;
+		
+		for (i=0; i<20; i++)
+		{
+			angka[i]= n;
+			n++;
+			
+			if (0 != angka[i] % 2)
+			{
+		 		cout <<angka[i] <<" ";
+		 	}
+		}
+	
+	return 0;
+}
