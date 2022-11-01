@@ -1,0 +1,24 @@
+//  program dengan memanfaatkan array dua dimensi pola matriks
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+		int  Nomor[10], n=1, i, j, m;
+		
+		for (i=0; i<=10; i++){
+			Nomor[i]=n;
+			n++;
+		}
+		
+		m=0;
+		for (i=0; i<4; i++){
+			for (j=0; j<=i ; j++){
+				cout <<Nomor[m] <<" ";
+				m++;
+			}
+		cout <<"\n";
+	}
+	return 0;
+}
