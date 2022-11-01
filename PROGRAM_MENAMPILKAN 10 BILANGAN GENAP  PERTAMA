@@ -1,0 +1,25 @@
+// della tugas2 nomor2 bilangan genap 1-10
+// program untuk mencetak deret 10 bilangan genap pertama dengan memanfaatkan array satu dimensi
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int angka[20], n=1, genap, i;
+	
+	cout << "10 bilangan genap pertama adalah: " ;
+		
+		for (i=0; i<20; i++)
+		{
+			angka[i]= n;
+			n++;
+			
+			if (0 == angka[i] % 2)
+			{
+		 		cout <<angka[i] <<" ";
+		 	}
+		}
+	
+	return 0;
+}
